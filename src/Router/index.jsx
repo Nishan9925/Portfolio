@@ -1,5 +1,4 @@
 import { Route, Router, Routes } from "react-router-dom";
-import Home from "../pages/Home";
 function AppRouter() {
   return (
     <>
@@ -10,6 +9,7 @@ function AppRouter() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/protfolio" element={<Protfolio />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </Router>
     </>

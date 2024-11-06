@@ -1,13 +1,15 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import "../src/assets/styles/reset.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import NotFoundPage from "./pages/NotFound.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Service from "./pages/Service.jsx";
+import NotFoundPage from "./pages/NotFound.jsx";
+import Blogs from "./pages/Blogs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,11 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service />,
+        errorElement: <NotFoundPage />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
         errorElement: <NotFoundPage />,
       },
     ],

@@ -1,9 +1,8 @@
-import { Outlet } from "react-router-dom";
 import Navbar from "../NavBar";
 
 function MainLayout({ children }) {
   return (
-    <>
+    <div className="wrapper">
       <header>
         <Navbar />
       </header>
@@ -14,7 +13,7 @@ function MainLayout({ children }) {
         
       </footer>
       
-    </>
+    </div>
   );
 }
 
