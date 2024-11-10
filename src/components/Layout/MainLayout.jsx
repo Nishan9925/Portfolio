@@ -1,19 +1,18 @@
-import Navbar from "../NavBar";
+import { Outlet } from "react-router-dom";
+import { MainLayoutWrapper } from "../../assets/styles/mainLayout/mainLayout";
+import Header from "../Header";
 
-function MainLayout({ children }) {
+function MainLayout() {
   return (
-    <div className="wrapper">
+    <MainLayoutWrapper>
       <header>
-        <Navbar />
+      <Header />
       </header>
       <main>
-        
+        <Outlet />
       </main>
-      <footer>
-        
-      </footer>
-      
-    </div>
+      <footer></footer>
+    </MainLayoutWrapper>
   );
 }
 

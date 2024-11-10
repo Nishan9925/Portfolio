@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 export const RouteLink = styled(NavLink)`
   font-family: "Inter";
-  /* color: ${(props) => (props.variant === "navbarLink" ? "#910d0d" : "none")}; */
+  color: ${(props) =>
+    props.variant === "navbarLink" ? "var(--text-color-default)" : "none"};
   text-decoration: none;
-  padding: 10px;
+  padding: 2rem;
   font-weight: bold;
 
   &.active {
-    color: #3498db;
-  };
+    background-color: var(--bgc-primary);
+    color: var(--text-color-inverse);
+    border-radius: 1rem;
+  }
 `;
-

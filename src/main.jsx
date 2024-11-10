@@ -18,32 +18,32 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
         errorElement: <NotFoundPage />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
         errorElement: <NotFoundPage />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact />,
         errorElement: <NotFoundPage />,
       },
       {
-        path: "/portfolio",
+        path: "portfolio",
         element: <Portfolio />,
         errorElement: <NotFoundPage />,
       },
       {
-        path: "/service",
+        path: "service",
         element: <Service />,
         errorElement: <NotFoundPage />,
       },
       {
-        path: "/blogs",
+        path: "blogs",
         element: <Blogs />,
         errorElement: <NotFoundPage />,
       },
