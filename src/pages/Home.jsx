@@ -13,7 +13,7 @@ import {
   HomeTextsRightBtn,
   HomeCardTitle,
 } from "../assets/styles/home/home.styles";
-import Card from "../components/CardUI";
+import Card from "../components/Cardui";
 
 
 function Home() {

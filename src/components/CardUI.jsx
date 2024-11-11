@@ -1,5 +1,4 @@
-import {
-  CardWrapper,
+import { CardWrapper,
   CardBoxInfoWrapper,
   CardBoxInfo,
   CardBoxDuration,
@@ -7,28 +6,26 @@ import {
   CardBoxTextsTitle,
   CardBoxTextsContent,
   CardBoxSummaryWrapper,
-  CardBoxSummary,
+  CardBoxSummary, } from "../UI/Card/Card";
 
-} from "../UI/CardStyle/Card.styles";
-
-function Card({ title, content, step, duration, summary1, summary2, summary3 }) {
+function Card({
+  title,
+  content,
+  step,
+  duration,
+  summary1,
+  summary2,
+  summary3,
+}) {
   return (
     <CardWrapper>
       <CardBoxInfoWrapper>
-        <CardBoxInfo>
-          {step}
-        </CardBoxInfo>
-        <CardBoxDuration>
-          {duration}
-        </CardBoxDuration>
+        <CardBoxInfo>{step}</CardBoxInfo>
+        <CardBoxDuration>{duration}</CardBoxDuration>
       </CardBoxInfoWrapper>
       <CardBoxTextsWrapper>
-        <CardBoxTextsTitle>
-          {title}
-        </CardBoxTextsTitle>
-        <CardBoxTextsContent>
-          {content}
-        </CardBoxTextsContent>
+        <CardBoxTextsTitle>{title}</CardBoxTextsTitle>
+        <CardBoxTextsContent>{content}</CardBoxTextsContent>
       </CardBoxTextsWrapper>
       <CardBoxSummaryWrapper>
         <CardBoxSummary>{summary1}</CardBoxSummary>
@@ -40,3 +37,4 @@ function Card({ title, content, step, duration, summary1, summary2, summary3 }) 
 }
 
 export default Card;
+
