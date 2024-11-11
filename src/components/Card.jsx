@@ -6,7 +6,7 @@ import { CardWrapper,
   CardBoxTextsTitle,
   CardBoxTextsContent,
   CardBoxSummaryWrapper,
-  CardBoxSummary, } from "../UI/Card/Card.styles";
+  CardBoxSummary, } from "../assets/styles/Card/Card.styles.jsx";
 
 function Card({
   title,
