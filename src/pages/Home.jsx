@@ -4,25 +4,41 @@ import {
   HomeTitle,
   HomeTexts,
   HomeTextsLeft,
-  //   HomeTextsRight,
+  HomeTextsRight,
   HomeProfession,
   HomeCards,
+  HomeCardTitle,
+  HomeCardContent,
+  HomeCardSubTitle,
+  HomeTextsRightBtn,
 } from "../assets/styles/home/home.styles";
-import Card from "../components/Card";
+import Card from "../components/CardUI";
+
 
 function Home() {
-  const [ cards ] = useState([
+
+
+  const [cards] = useState([
     {
-      title: "Home",
-      text: "Welcome to the homepage!",
+      id: 1,
+      title: "Discovery Call",
+      content: "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+      step: "Step 1",
+      duration: "2 hour",
     },
     {
+      id: 2,
       title: "About",
-      text: "Learn more about us here.",
+      content: "Learn more about us here.",
+      step: "Step 2",
+      duration: "1 week",
     },
     {
+      id: 3,
       title: "Contact",
-      text: "Get in touch with us!",
+      content: "Get in touch with us!",
+      step: "Step 3",
+      duration: "1 week",
     },
   ]);
 
@@ -35,16 +51,33 @@ function Home() {
             Software Engineer specialized in Front-End Development
           </HomeProfession>
         </HomeTextsLeft>
-        {/* <HomeTextsRight>123456</HomeTextsRight> */}
+        <HomeTextsRight>
+          <HomeTextsRightBtn >Download </HomeTextsRightBtn>
+        </HomeTextsRight>
       </HomeTexts>
       <HomeCards>
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          title={card.title}
-          text={card.text}
-        />
-      ))}
+        <HomeCardTitle>
+          <HomeCardSubTitle>
+            THE PROCESS
+          </HomeCardSubTitle>
+          Your Website in 5 steps
+          <HomeCardSubTitle>
+            Our process ensures that we create a 
+            website tailored to your business needs.
+          </HomeCardSubTitle>
+        </HomeCardTitle>
+        <HomeCardContent>
+          {cards.map((card, id) => (
+            <Card 
+              key={id} 
+              title={card.title} 
+              content={card.content} 
+              step={card.step}
+              duration={card.duration}
+              summary={card.summary}
+            />
+          ))}
+        </HomeCardContent>
       </HomeCards>
     </HomeWrapper>
   );

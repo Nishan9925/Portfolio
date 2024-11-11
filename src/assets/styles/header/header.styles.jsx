@@ -4,7 +4,7 @@ export const HeaderTag = styled.header`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   width: 70vw;
   padding: 1.3rem;
   background-color: var(--bgc-secondary);

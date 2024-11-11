@@ -3,9 +3,13 @@ import {
   HomeTitle,
   HomeTexts,
   HomeTextsLeft,
-//   HomeTextsRight,
+  HomeTextsRight,
+  HomeTextsRightBtn,
   HomeProfession,
-  HomeCards
+  HomeCards,
+  HomeCardTitle,
+  HomeCardContent,
+  HomeCardSubTitle,
 } from "./home.styles";
 
 export {
@@ -13,8 +17,11 @@ export {
   HomeTitle,
   HomeTexts,
   HomeTextsLeft,
-//   HomeTextsRight,
+  HomeTextsRight,
+  HomeTextsRightBtn,
   HomeProfession,
-  HomeCards
-
+  HomeCards,
+  HomeCardTitle,
+  HomeCardContent,
+  HomeCardSubTitle,
 };
