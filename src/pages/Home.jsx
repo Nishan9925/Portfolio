@@ -13,7 +13,8 @@ import {
   HomeTextsRightBtn,
   HomeCardTitle,
 } from "../assets/styles/home/home.styles";
-import Card from "../components/Cardui";
+import Cardui from "../components/CardUI";
+
 
 
 function Home() {
@@ -100,7 +101,7 @@ function Home() {
         </HomeCardTitleWrapper>
         <HomeCardContent>
           {cards.map((card, id) => (
-            <Card 
+            <Cardui
               key={id} 
               title={card.title} 
               content={card.content} 

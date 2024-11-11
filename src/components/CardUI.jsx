@@ -8,7 +8,7 @@ import { CardWrapper,
   CardBoxSummaryWrapper,
   CardBoxSummary, } from "../UI/Card/Card";
 
-function Card({
+function Cardui({
   title,
   content,
   step,
@@ -36,5 +36,5 @@ function Card({
   );
 }
 
-export default Card;
+export default Cardui;
 
