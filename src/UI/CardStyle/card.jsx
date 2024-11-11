@@ -4,6 +4,10 @@ import {
     CardBoxInfo,
     CardBoxDuration,
     CardBoxTextsWrapper,
+    CardBoxTextsTitle,
+    CardBoxTextsContent,
+    CardBoxSummaryWrapper,
+    CardBoxSummary,
 
 } from "./Card.styles";
 
@@ -12,6 +16,10 @@ export {
     CardBoxInfoWrapper,
     CardBoxInfo,
     CardBoxDuration,
-    CardBoxTextsWrapper
+    CardBoxTextsWrapper,
+    CardBoxTextsTitle,
+    CardBoxTextsContent,
+    CardBoxSummaryWrapper,
+    CardBoxSummary,
 
 }

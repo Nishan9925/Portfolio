@@ -9,6 +9,8 @@ export const CardWrapper = styled.div`
   width: 50vw;
   border-radius: 0.125rem;
   font-family: var(--main-font-family);
+  gap: 1.5rem;
+  padding: 1rem;
 `;
 
 export const CardBoxInfoWrapper = styled.div`
@@ -16,6 +18,7 @@ export const CardBoxInfoWrapper = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  row-gap: 0.1rem;
 `;
 
 export const CardBoxInfo = styled.p`
@@ -33,12 +36,43 @@ export const CardBoxInfo = styled.p`
 
 export const CardBoxDuration = styled(CardBoxInfo)`
   font-weight: 400;
-  width: 3rem;
+  width: 3.5rem;
   font-size: var(--small);
   padding: 0.2rem;
-  margin: 1rem;
+  margin: 0.5rem;
 `;
 
-export const CardBoxTextsWrapper = styled.h3`
-
+export const CardBoxTextsWrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: right;
+  row-gap: 1rem;
+  margin: 0.5rem;
 `;
+
+export const CardBoxTextsTitle = styled.h3`
+  color: var(--text-color-default);
+  font-size: var(--xlarge);
+  font-weight: 400;
+`;
+
+export const CardBoxTextsContent = styled.p`
+  font-size: var(--default);
+  color: var(--text-color-muted);
+`;
+
+export const CardBoxSummaryWrapper = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 1rem;
+  margin-left: 1.5rem;
+  padding: 0.2rem;
+`;
+
+export const CardBoxSummary = styled.p`
+  color: var(--text-color-default);
+  display: list-item;
+`;
+
+

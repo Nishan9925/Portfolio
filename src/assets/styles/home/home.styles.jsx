@@ -17,7 +17,6 @@ export const HomeTexts = styled.div`
   width: 90vw;
   gap: 3rem;
   align-items: center;
-  /* padding: 5vh; */
 `;
 
 export const HomeTextsLeft = styled.div`
@@ -61,17 +60,21 @@ export const HomeCards = styled.div`
   gap: 3rem;
 `;
 
-export const HomeCardTitle = styled.p`
+export const HomeCardTitleWrapper = styled.div`
   color: var(--text-color-default);
-  font-size: 3.6rem;
   text-align: center;
   gap: 3rem;
   display: flex;
   flex-flow: column wrap;
 `;
 
-export const HomeCardSubTitle = styled(HomeCardTitle)`
+export const HomeCardTitle = styled.h3`
+  font-size: 3.6rem;
+`;
+
+export const HomeCardSubTitle = styled.p`
   font-size: var(--meta);
+  color: var(--text-color-muted);
 `;
 
 export const HomeCardContent = styled.div`

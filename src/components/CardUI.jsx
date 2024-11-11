@@ -3,10 +3,15 @@ import {
   CardBoxInfoWrapper,
   CardBoxInfo,
   CardBoxDuration,
-  // CardStepWrapper,
+  CardBoxTextsWrapper,
+  CardBoxTextsTitle,
+  CardBoxTextsContent,
+  CardBoxSummaryWrapper,
+  CardBoxSummary,
+
 } from "../UI/CardStyle/Card.styles";
 
-function Card({ title, content, step, duration }) {
+function Card({ title, content, step, duration, summary1, summary2, summary3 }) {
   return (
     <CardWrapper>
       <CardBoxInfoWrapper>
@@ -17,9 +22,19 @@ function Card({ title, content, step, duration }) {
           {duration}
         </CardBoxDuration>
       </CardBoxInfoWrapper>
-      
-      <h2>{title}</h2>
-      <p>{content}</p>
+      <CardBoxTextsWrapper>
+        <CardBoxTextsTitle>
+          {title}
+        </CardBoxTextsTitle>
+        <CardBoxTextsContent>
+          {content}
+        </CardBoxTextsContent>
+      </CardBoxTextsWrapper>
+      <CardBoxSummaryWrapper>
+        <CardBoxSummary>{summary1}</CardBoxSummary>
+        <CardBoxSummary>{summary2}</CardBoxSummary>
+        <CardBoxSummary>{summary3}</CardBoxSummary>
+      </CardBoxSummaryWrapper>
     </CardWrapper>
   );
 }
