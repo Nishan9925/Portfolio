@@ -6,7 +6,7 @@ import { CardWrapper,
   CardBoxTextsTitle,
   CardBoxTextsContent,
   CardBoxSummaryWrapper,
-  CardBoxSummary, } from "../UI/Card/Card";
+  CardBoxSummary, } from "../UI/Card/Cards";
 
 function Cardui({
   title,
