@@ -12,7 +12,7 @@ import {
   HomeCardSubTitle,
   HomeTextsRightBtn,
   HomeCardTitle,
-} from "../assets/styles/home/home.styles";
+} from "../assets/styles/home/home";
 import Card from "../components/Card";
 
 
