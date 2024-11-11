@@ -19,7 +19,6 @@ import Card from "../components/Card";
 
 function Home() {
 
-
   const [cards] = useState([
     {
       id: 1,
@@ -83,7 +82,7 @@ function Home() {
           </HomeProfession>
         </HomeTextsLeft>
         <HomeTextsRight>
-          <HomeTextsRightBtn >Download </HomeTextsRightBtn>
+          <HomeTextsRightBtn href="/path/to/Nshan_Zakaryan_CV.pdf">Download CV</HomeTextsRightBtn>
         </HomeTextsRight>
       </HomeTexts>
       <HomeCards>

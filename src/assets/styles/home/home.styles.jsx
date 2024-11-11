@@ -45,7 +45,9 @@ export const HomeTextsRight = styled.div`
   font-size: 3.6rem;
 `;
 
-export const HomeTextsRightBtn = styled.button`
+export const HomeTextsRightBtn = styled.a.attrs({
+  download: 'Nshan_Zakaryan_CV.pdf',
+})`
   color: red;
 `;
 
