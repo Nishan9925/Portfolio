@@ -15,3 +15,11 @@ export const RouteLink = styled(NavLink)`
     border-radius: 1rem;
   }
 `;
+
+export const SubRouteLink = styled(RouteLink)`
+  font-family: var(--main-font-family);
+  padding: 0.5rem;
+  color: var(--text-color-default);
+  text-align: center;
+  padding: 0.5rem;
+`;

@@ -10,6 +10,10 @@ import Portfolio from "./pages/Portfolio.jsx";
 import Service from "./pages/Service.jsx";
 import NotFoundPage from "./pages/NotFound.jsx";
 import Blogs from "./pages/Blogs.jsx";
+import WebDesign from "./pages/ServicePages/WebDesign.jsx";
+import Development from "./pages/ServicePages/Development.jsx";
+import SEOContext from "./pages/ServicePages/SEOContext.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -38,9 +42,31 @@ const router = createBrowserRouter([
         errorElement: <NotFoundPage />,
       },
       {
-        path: "service",
+        path: "/service",
         element: <Service />,
         errorElement: <NotFoundPage />,
+        children: [
+          {
+            index: true,
+            element: <WebDesign />,
+            errorElement: <NotFoundPage />,
+          },
+          {
+            path: "webdesign",
+            element: <WebDesign />,
+            errorElement: <NotFoundPage />,
+          },
+          {
+            path: "development", 
+            element: <Development />,
+            errorElement: <NotFoundPage />,
+          },
+          {
+            path: "seo",
+            element: <SEOContext/>,
+            errorElement: <NotFoundPage />,
+          }
+        ]
       },
       {
         path: "blogs",

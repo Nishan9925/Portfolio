@@ -101,14 +101,14 @@ function Home() {
         <HomeCardContent>
           {cards.map((card, id) => (
             <Card
-              key={id} 
-              title={card.title} 
-              content={card.content} 
+              key={id}
+              title={card.title}
+              content={card.content}
               step={card.step}
               duration={card.duration}
               summary1={card.summary1}
               summary2={card.summary2}
-              summary3 = {card.summary3}
+              summary3={card.summary3}
             />
           ))}
         </HomeCardContent>

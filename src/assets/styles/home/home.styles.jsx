@@ -3,11 +3,9 @@ import styled from "styled-components";
 export const HomeWrapper = styled.section`
   display: flex;
   flex-flow: column wrap;
-  /* width: 100vw; */
   margin-top: 10vh;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 `;
 
 export const HomeTexts = styled.div`
@@ -46,9 +44,17 @@ export const HomeTextsRight = styled.div`
 `;
 
 export const HomeTextsRightBtn = styled.a.attrs({
-  download: 'Nshan_Zakaryan_CV.pdf',
+  download: "Nshan_Zakaryan_CV.pdf",
 })`
-  color: red;
+  color: var(--text-color-inverse);
+  background-color: var(--bgc-primary);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  outline: 0.3rem solid var(--text-color-inverse-muted);
+  font-size: var(--large);
+  font-weight: 700;
+  font-family: var(--main-font-family);
 `;
 
 export const HomeCards = styled.div`
